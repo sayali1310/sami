@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Samiksha Pawar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#0b0f14;
+color:white;
+}
+
+/* NAV */
+
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+color:#00f5d4;
+}
+
+nav ul{
+display:flex;
+gap:30px;
+list-style:none;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#00f5d4;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:100px 20px;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.hero h1{
+font-size:48px;
+color:#00f5d4;
+}
+
+.hero p{
+margin-top:10px;
+opacity:0.8;
+}
+
+/* CARD */
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:30px;
+margin:30px 10%;
+border-radius:15px;
+border:1px solid rgba(0,255,200,0.2);
+position:relative;
+}
+
+/* glowing lines */
+
+.card::before,
+.card::after{
+content:"";
+position:absolute;
+left:0;
+width:100%;
+height:2px;
+background:linear-gradient(to right, transparent, #00f5d4, transparent);
+}
+
+.card::before{ top:0; }
+.card::after{ bottom:0; }
+
+/* HEADINGS */
+
+h2{
+color:#00f5d4;
+margin-bottom:15px;
+}
+
+h2::after{
+content:"";
+display:block;
+width:60px;
+height:2px;
+background:#00f5d4;
+margin-top:6px;
+}
+
+/* GRID */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+/* SKILLS BOX */
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+gap:15px;
+margin-top:15px;
+}
+
+.skill{
+background:rgba(0,255,200,0.1);
+padding:10px;
+text-align:center;
+border-radius:8px;
+border:1px solid rgba(0,255,200,0.3);
+transition:0.3s;
+}
+
+.skill:hover{
+background:#00f5d4;
+color:black;
+}
+
+/* PROGRESS BARS */
+
+.bar{
+margin:15px 0;
+}
+
+.bar span{
+display:block;
+margin-bottom:5px;
+font-size:14px;
+}
+
+.progress{
+width:100%;
+height:8px;
+background:rgba(255,255,255,0.1);
+border-radius:10px;
+overflow:hidden;
+}
+
+.progress div{
+height:100%;
+background:#00f5d4;
+border-radius:10px;
+}
+
+/* TABLE */
+
+table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+th, td{
+padding:10px;
+text-align:left;
+border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+th{
+color:#00f5d4;
+}
+
+/* LIST */
+
+ul{
+margin-top:10px;
+padding-left:20px;
+}
+
+li{
+margin-bottom:8px;
+}
+
+/* BUTTON */
+
+.college-btn{
+display:inline-block;
+margin-top:15px;
+padding:10px 25px;
+border-radius:25px;
+background:#00f5d4;
+color:black;
+font-weight:600;
+text-decoration:none;
+transition:0.3s;
+}
+
+.college-btn:hover{
+background:#00c2a8;
+}
+
+/* FOOTER */
+
+footer{
+text-align:center;
+padding:30px;
+margin-top:40px;
+opacity:0.8;
+border-top:1px solid rgba(255,255,255,0.1);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Portfolio</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Hello I'm Samiksha Pawar</h1>
+<p>FY B.Tech Civil Engineering Student</p>
+</section>
+
+<section id="about" class="card">
+<h2>About Me</h2>
+<p>
+Hello! I am <b>Samiksha Subhash Pawar</b>. I am an engineering student interested in learning modern technologies, creative projects and developing new skills. 
+I have a strong interest in <b>Artificial Intelligence and Data Science  enjoy exploring how technology can solve real-world problems.</b>.
+</p>
+</section>
+<section id="skills" class="card">
+<h2> Technical Skills</h2>
+<div class="skills">
+<div class="skill">AutoCAD</div>
+<div class="skill">Engineering Basics</div>
+<div class="skill">MS Word</div>
+<div class="skill">PowerPoint</div>
+<div class="skill">Communication</div>
+<div class="skill">Teamwork</div>
+</div>
+</section>
+
+<section class="card">
+<h2>Strengths</h2>
+<ul>
+<li>Quick learner and adaptable</li>
+<li>Strong analytical thinking</li>
+<li>Good communication and teamwork</li>
+<li>Positive attitude towards challenges</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>Career Goal</h2>
+<p>
+<b>“My goal is to secure a position in the government sector as a civil engineer and contribute to public infrastructure development.”<b>
+</p>
+</section>
+
+<section class="card">
+<h2>Hobbies & Interests</h2>
+<ul>
+<li>Exploring new technologies</li>
+<li>Reading and learning new concepts
+</li>
+<li>Creative design and problem solving</li>
+<li>Team activities and collaboration</li>
+</ul>
+</section>
+
+
+
+<section class="card">
+<h2>Academic Information</h2>
+<div class="grid">
+<p><b>College:</b> MIT Academy of Engineering</p>
+<p><b>Branch:</b> Civil Engineering</p>
+<p><b>Year:</b> First Year</p>
+</div>
+</section>
+
+<section class="card">
+<h2>Academic Performance</h2>
+<div class="grid">
+<p><b>10th Percentage:</b> 92.40 %</p>
+<p><b>12th Percentage:</b> 68 %</p>
+<p><b>Semester 1 CGPA:</b> 8.85</p>
+</div>
+</section>
+
+<!-- NEW SKILL BARS -->
+<section class="card">
+<h2>Skill Proficiency</h2>
+
+<div class="bar">
+<span>Problem Solving</span>
+<div class="progress"><div style="width:90%"></div></div>
+</div>
+
+<div class="bar">
+<span>Basic Programming (C/Python)</span>
+<div class="progress"><div style="width:75%"></div></div>
+</div>
+
+<div class="bar">
+<span>Communication Skills</span>
+<div class="progress"><div style="width:85%"></div></div>
+</div>
+
+<div class="bar">
+<span>Teamwork</span>
+<div class="progress"><div style="width:95%"></div></div>
+</div>
+
+</section>
+
+<!-- SEMESTER TABLE -->
+<section class="card">
+<h2>Semester 1 Subjects & Marks</h2>
+
+<table>
+<tr>
+<th>Subject</th>
+<th>Marks</th>
+<th>Grade</th>
+</tr>
+
+<tr>
+<td>Calculus & Differential Equations</td>
+<td>85</td>
+<td>A+</td>
+</tr>
+
+<tr>
+<td>Foundations of Computing</td>
+<td>53</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>Computer Aided Engineering</td>
+<td>63</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>Engineering Physics</td>
+<td>72</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td>Communication Skills</td>
+<td>68</td>
+<td>A</td>
+</tr>
+
+<tr>
+<td> Electrical Science and Electronic Systems</td>
+<td>52</td>
+<td>B</td>
+</tr>
+
+</table>
+</section>
+
+<section id="projects" class="card">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project">
+
+<h3>Academic Project</h3>
+
+<p>Worked on academic assignments and engineering practical models.</p>
+</div>
+
+<div class="project">
+
+<h3>Mini Engineering Model</h3>
+
+<p>Designed and developed a basic engineering working model for college project.</p>
+
+</div>
+
+</div>
+
+
+</section>
+
+
+<section id="contact" class="card">
+<h2>Contact</h2>
+<p>Email: sami.pawar.ps@gmail.com</p>
+<p>Phone:91 XXXXX XXXXX <br>
+Location: Pune, Maharashtra, India</p>
+</section>
+
+<footer>
+<p>© 2026 Samiksha Pawar | Portfolio</p>
+
+<a href="https://www.mitaoe.ac.in/" target="_blank" class="college-btn">
+Visit My College Website
+</a>
+
+</footer>
+
+</body>
+</html>
